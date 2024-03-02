@@ -23,7 +23,7 @@ def register():
     root1.title("Register")
     root1.geometry("900x600+320+50")
     img = Image.open("mov_bg.jpg")
-    resized = img.resize((900,600),Image.ANTIALIAS)
+    resized = img.resize((900,600),Image.LANCZOS)
     img1 = ImageTk.PhotoImage(resized)
     Label2 = Label(root1,image=img1).pack()
     frame2 = Frame(Label2,width=400,height=400,bg="white")
@@ -85,7 +85,7 @@ def login():
         root.destroy()
         register()
     img = Image.open("mov_bg.jpg")
-    resized = img.resize((900,600),Image.ANTIALIAS)
+    resized = img.resize((900,600),Image.LANCZOS)
     img1 = ImageTk.PhotoImage(resized)
     Label1 = Label(root,image=img1).pack()
     frame = Frame(Label1,width=350,height=400,bg="black")
@@ -158,7 +158,7 @@ def callTheatrePage(movie_id,custId):
     disp = Label(nav, text="Hello "+name, bg='grey', fg='white').place(x=720, y=0)
 
     img = Image.open(f"{movie_id}.jpg")
-    resized = img.resize((900,600),Image.ANTIALIAS)
+    resized = img.resize((900,600),Image.LANCZOS)
     img1 = ImageTk.PhotoImage(resized)
     Label2 = Label(thtpg,image=img1).pack()
 
@@ -219,7 +219,7 @@ def movies(custID):
     disp = Label(nav, text="Hello "+name, bg='#6967ce', fg='white',padx=20,pady=10).place(x=620, y=0)
 
     img = Image.open("home_bg.png")
-    resized = img.resize((900,600),Image.ANTIALIAS)
+    resized = img.resize((900,600),Image.LANCZOS)
     img1 = ImageTk.PhotoImage(resized)
     Label2 = Label(movie,image=img1).pack()
 
@@ -284,7 +284,7 @@ def seats(show_ID,custId):
     disp = Label(nav, text="Hello "+name, bg='grey', fg='white').place(x=720, y=0)
 
     img = Image.open("home_bg.png")
-    resized = img.resize((900,600),Image.ANTIALIAS)
+    resized = img.resize((900,600),Image.LANCZOS)
     img1 = ImageTk.PhotoImage(resized)
     Label2 = Label(seatPage,image=img1).pack()
 
@@ -375,7 +375,7 @@ def callPaymentPage(show_ID,newBooked,custId):
     disp = Label(nav, text="Hello "+name, bg='grey', fg='white').place(x=720, y=0)
 
     img = Image.open("home_bg.png")
-    resized = img.resize((900,600),Image.ANTIALIAS)
+    resized = img.resize((900,600),Image.LANCZOS)
     img1 = ImageTk.PhotoImage(resized)
     Label2 = Label(payPage,image=img1).pack()
 

@@ -1,0 +1,5 @@
+mysql-connector-python
+mysql-connector
+mysql
+Pillow
+tk
