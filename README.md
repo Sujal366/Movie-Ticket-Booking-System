@@ -1,4 +1,4 @@
-# Cinema Booking System
+# Movie Ticket Booking System
 
 This is a simple cinema booking system implemented in Python using Tkinter for the graphical user interface (GUI) and MySQL for the database. Users can register, login, select movies, book seats, and make payments through this system.
 
